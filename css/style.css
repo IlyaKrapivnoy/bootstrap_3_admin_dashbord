@@ -38,3 +38,7 @@ body {
 .breadcrumb a {
     color: #333;
 }
+
+.main-color-bg {
+    background-color: #080808 !important;
+}
