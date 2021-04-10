@@ -56,7 +56,7 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Add Page</a></li>
+                            <li><a type="button" data-toggle="modal" data-target="#addPage">Add Page</a></li>
                             <li><a href="#">Add Post</a></li>
                             <li><a href="#">Add User</a></li>
                         </ul>
@@ -159,6 +159,11 @@
                                   <td>Nov 13, 2020</td>
                               </tr>
                               <tr>
+                                  <td>Marry S.</td>
+                                  <td>incognitogirl22@gmail.com</td>
+                                  <td>Feb 02, 2021</td>
+                              </tr>
+                              <tr>
                                   <td>Hannah Longman</td>
                                   <td>hannah.tim.log@gmail.com</td>
                                   <td>Jan 22, 2021</td>
@@ -170,6 +175,42 @@
             </div>
         </div>
     </section>
+
+    <!-- Modals -->
+
+    <!-- Add Page Modal -->
+    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Page</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Page Title</label>
+                            <input type="text" class="form-control" placeholder="Page Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Page Body</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Allow Comments Below</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
      
 
     <!-- Bootstrap core JavaScript
