@@ -41,8 +41,13 @@ body {
 
 .main-color-bg {
     background-color: #080808 !important;
+    color: #fff !important;
 }
 
 .progress-bar-dark-color {
     background: #333;
+}
+
+.dash-box {
+    text-align: center;
 }
