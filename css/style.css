@@ -42,3 +42,7 @@ body {
 .main-color-bg {
     background-color: #080808 !important;
 }
+
+.progress-bar-dark-color {
+    background: #333;
+}
