@@ -57,8 +57,8 @@
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a type="button" data-toggle="modal" data-target="#addPage">Add Page</a></li>
-                            <li><a href="#">Add Post</a></li>
-                            <li><a href="#">Add User</a></li>
+                            <li><a type="button" data-toggle="modal" data-target="#addPost">Add Post</a></li>
+                            <li><a type="button" data-toggle="modal" data-target="#addUser">Add User</a></li>
                         </ul>
                     </div>
                 </div>
@@ -197,10 +197,71 @@
                             <label for="exampleFormControlTextarea1">Page Body</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                           </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add Post Modal -->
+    <div class="modal fade" id="addPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add Post</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Post Title</label>
+                            <input type="text" class="form-control" placeholder="Page Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Post Body</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
                         <div class="form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Allow Comments Below</label>
                         </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+    <!-- Add User Modal -->
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Add User</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Add name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Add email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell us about your hobby"></textarea>
+                          </div>
                     </form>
                 </div>
                 <div class="modal-footer">
